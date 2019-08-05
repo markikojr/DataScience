@@ -1,39 +1,37 @@
-# Data Science
+# Data Science Portfolio
 
 ## Description: Data Science, Machine Learning, Deep Learning and Python.
-
 This directory contains runnable sample python programs for machine learning.
 
-To run:
+## To run:
+- first install python3 and the libraries.
+- make sure to check the correct path to access the data for each program.
+- from the command line, execute: `python example.py`, replacing "example.py" with the name of a program.
 
-first install python3 and the libraries
-make sure to check the correct path to access the data for each program
-from the command line, execute: python example.py, replacing "example.js" with the name of a program.
-Goal is to show:
+## Goal is to show:
 
----------------------------
-## Basic python programming skills: 
+### Basic python programming skills: 
 pythonBasics.py, pythonConditionalProbability.py, pythonCovarianceCorrelation.py, pythonMatplotlib.py, pythonOutliers.py, pythonPandas.py, pythonStatistics.py
 
-## Machine learning regression skills: 
+### Machine learning regression skills: 
 pythonLinearRegression.py, pythonMultivariateRegression.py, pythonPolynomialRegression.py, pythonTrainTest.py
 
-## Machine learning Classification skills: 
+### Machine learning Classification skills: 
 pythonNaiveBayes.py, pythonDecisionTree.py, pythonSVM.py, pythonKFoldCrossValidation.py, pythonMLTEST.py 
 
-## Machine learning recommender system skills:
+### Machine learning recommender system skills:
 pythonFindingSimilarMovies.py, pythonItemBasedCollaborativeFiltering.py
 
-## Machine learning unsupervised skills: 
+### Machine learning unsupervised skills: 
 pythonKMeans.py, pythonKNN.py, pythonPCA.py
 
-## Machine learning spark skills:
+### Machine learning spark skills:
 SparkLinearRegression.py, SparkDecisionTree.py, SparkKMeans.py
 
-## Deep learning skills: 
+### Deep learning skills: 
 pythonKeras.py, pythonTensorFlow.py
 
-## Data: 
+### Data: 
 PastHires.csv, emails, ml-100k, mammographic_masses.names.txt, mammographic_masses.data.txt, house-votes-84.data.txt, house-votes-84.names.txt, regression.txt, subset-small.tsv
 
 ----------------------------
