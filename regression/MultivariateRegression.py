@@ -1,3 +1,6 @@
+'''This program creates a Multivariate regression to predict
+prices of cars based on their features'''
+
 import pandas as pd
 import statsmodels.api as sm
 from sklearn.preprocessing import StandardScaler
@@ -20,10 +23,10 @@ X[['Mileage', 'Cylinder', 'Doors']] = scale.fit_transform(X[['Mileage', 'Cylinde
 print (X)
 
 #MODEL (A simple ordinary least squares model.)
-est = sm.OLS(y, X).fit()
+model = sm.OLS(y, X).fit()
 
 #MODEL SUMMARY
-print (est.summary())
+print (model.summary())
 
 #GROUP PRICE BY DOORS AND GET THE MEAN 
 print (y.groupby(df.Doors).mean())

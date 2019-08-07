@@ -1,8 +1,13 @@
+'''This program creates a model using Support Vector Machines 
+to get the performance of model using single train/test or K-fold cross
+validation for the Iris Flowers dataset'''
+
 import numpy as np
 from sklearn.model_selection import cross_val_score, train_test_split
 from sklearn import datasets
 from sklearn import svm
 
+#LOADING THE DATA
 iris = datasets.load_iris()
 
 # Split the iris data into train/test data sets with 40% reserved for testing
@@ -19,7 +24,6 @@ scores = cross_val_score(clf, iris.data, iris.target, cv=5)
 
 # Print the accuracy for each fold:
 print(scores)
-
 # And the mean accuracy of all 5 folds:
 print(scores.mean())
 
@@ -28,10 +32,3 @@ clf = svm.SVC(kernel='poly', C=1).fit(X_train, y_train)
 scores = cross_val_score(clf, iris.data, iris.target, cv=5)
 print(scores)
 print(scores.mean())
-
-# Build an SVC model for predicting iris classifications using training data
-clf = svm.SVC(kernel='poly', C=1).fit(X_train, y_train)
-
-# Now measure its performance with the test data
-print(clf.score(X_test, y_test))
-

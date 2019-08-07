@@ -1,3 +1,6 @@
+'''This program creates a model using Naive Bayes  
+to classify emails in spam or not_spam'''
+
 import os
 import io
 import numpy
@@ -44,8 +47,8 @@ def dataFrameFromDirectory(path, classification):
 data = DataFrame({'message': [], 'class': []})
 
 #CALLING DATAFRAME FUNCTION TO FILL DATA
-data = data.append(dataFrameFromDirectory('/home/markjr/data_science/DataScience/DataScience-Python3/emails/spam/', 'spam'))
-data = data.append(dataFrameFromDirectory('/home/markjr/data_science/DataScience/DataScience-Python3/emails/ham/', 'ham'))
+data = data.append(dataFrameFromDirectory('/home/markjr/Documents/Data_science/classification/emails/spam/', 'spam'))
+data = data.append(dataFrameFromDirectory('/home/markjr/Documents/Data_science/classification/emails/ham/', 'ham'))
 
 #INSPECTING DATA
 print (data.shape)

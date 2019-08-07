@@ -1,3 +1,6 @@
+'''This program creates a model using Support Vector Machines  
+to get clustering from fake income/age clustered data'''
+
 import numpy as np
 from pylab import *
 from sklearn import svm, datasets
@@ -23,6 +26,7 @@ plt.figure(figsize=(8, 6))
 plt.scatter(X[:,0], X[:,1], c=y.astype(np.float))
 plt.show()   
 
+#PARTITION GRAPH INTO CLUSTERS
 C = 1.0
 svc = svm.SVC(kernel='linear', C=C).fit(X, y)
 
@@ -38,6 +42,3 @@ def plotPredictions(clf):
     plt.show()
     
 plotPredictions(svc)
-
-print(svc.predict([[200000, 40]]))
-print(svc.predict([[50000, 65]]))

@@ -1,5 +1,9 @@
 #!/usr/bin/python
 
+'''This program creates a comparison between models using DecisionTree, 
+LogisticRegression, LinearDiscriminant, KNN, Naive Bayes, and SVM to get the 
+accuracy of each model for the Iris Flowers dataset'''
+
 #LOADING LIBRARIES
 import matplotlib.pyplot as plt
 import pandas 
@@ -65,7 +69,7 @@ models.append(('CART', DecisionTreeClassifier()))
 models.append(('NB', GaussianNB()))
 models.append(('SVM', SVC(gamma='auto')))
 
-#EVALUATING EACH MODEL IN TURNS
+#EVALUATING EACH MODEL IN TURNS USING KFOLD IN 10 SPLITS
 results = []
 names = []
 for name, model in models:
@@ -86,10 +90,11 @@ plt.boxplot(results)
 ax.set_xticklabels(names)
 plt.show()
 
-#MAKING PREDICTIONS ON VALIDATION DATA
+#MAKING PREDICTIONS ON VALIDATION DATA FOR KNN MODEL
 knn = KNeighborsClassifier()
 knn.fit(X_train, Y_train)
 predictions = knn.predict(X_validation)
 print(accuracy_score(Y_validation, predictions))
 print(confusion_matrix(Y_validation, predictions))
-print(classification_report(Y_validation, predictions))     
+print(classification_report(Y_validation, predictions))  
+	

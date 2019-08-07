@@ -1,3 +1,7 @@
+'''This program fabricates some data that shows a non-linear
+relationship between page speed and amount purchased and it creates a
+Polynomial model prediction for the data points'''
+
 from pylab import *
 import numpy as np
 import matplotlib.pyplot as plt

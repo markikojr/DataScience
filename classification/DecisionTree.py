@@ -1,3 +1,6 @@
+'''This program creates a model using DecisionTree and RandomForest 
+to predict employment of specific candidate profiles'''
+
 import numpy as np
 import pandas as pd
 from sklearn import tree
@@ -6,9 +9,12 @@ from sklearn.externals.six import StringIO
 import pydotplus
 from sklearn.ensemble import RandomForestClassifier
 
-input_file = "/home/markjr/data_science/DataScience/DataScience-Python3/PastHires.csv"
+#LOADING THE DATA
+input_file = "/home/markjr/Documents/Data_science/classification/PastHires.csv"
+#input_file = "PastHires.csv"
 df = pd.read_csv(input_file, header = 0)
 
+#CHECKING THE DATA
 print(df.head())
 print(df.shape)
 

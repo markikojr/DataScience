@@ -1,4 +1,9 @@
 # -*- coding: utf-8 -*-
+'''This program fabricates some data that shows a roughly linear
+relationship between page speed and amount purchased and it creates a
+linear regression prediction for the data points'''
+
+# -*- coding: utf-8 -*-
 import numpy as np
 from pylab import *
 import matplotlib.pyplot as plt
@@ -24,4 +29,3 @@ fitLine = predict(pageSpeeds)
 plt.scatter(pageSpeeds, purchaseAmount)
 plt.plot(pageSpeeds, fitLine, c='r')
 plt.show()
-
