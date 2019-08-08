@@ -17,13 +17,13 @@ pythonBasics.py, pythonConditionalProbability.py, pythonCovarianceCorrelation.py
 pythonLinearRegression.py, pythonMultivariateRegression.py, pythonPolynomialRegression.py, pythonTrainTest.py
 
 ### Machine learning Classification skills: 
-pythonNaiveBayes.py, pythonDecisionTree.py, pythonSVM.py, pythonKFoldCrossValidation.py, pythonMLTEST.py 
+pythonNaiveBayes.py, pythonDecisionTree.py, pythonKFoldCrossValidation.py, pythonMLTEST.py 
 
 ### Machine learning recommender system skills:
 pythonFindingSimilarMovies.py, pythonItemBasedCollaborativeFiltering.py
 
 ### Machine learning unsupervised skills: 
-pythonKMeans.py, pythonKNN.py, pythonPCA.py
+pythonKMeans.py, pythonKNN.py, pythonPCA.py, pythonSVM.py
 
 ### Machine learning spark skills:
 SparkLinearRegression.py, SparkDecisionTree.py, SparkKMeans.py
