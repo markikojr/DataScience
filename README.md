@@ -4,9 +4,11 @@
 Directory contains folders with runnable sample python programs for machine learning.
 
 ## To run:
-- first install python3 and libraries. Install the requirements for your project using `pip install -r requirements.txt`. 
-- make sure to check the correct path to access the data for each program.
-- from the command line, execute: `python example.py`, replacing "example.py" with the name of a program.
+- First install python3 and libraries. Install the requirements for your project using `pip install -r requirements.txt`. 
+- Clone this repository to your computer
+- Access files .py inside folders
+- Make sure to check the correct path to access the data for each program.
+- From the command line, execute: `python example.py`, replacing "example.py" with the name of a program.
 
 ## Goal is to show:
 
