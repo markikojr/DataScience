@@ -4,7 +4,7 @@
 Directory contains folders with runnable sample python programs for machine learning.
 
 ## To run:
-- first install python3 and libraries.
+- first install python3 and libraries. Install the requirements for your project using `pip install -r requirements.txt`. 
 - make sure to check the correct path to access the data for each program.
 - from the command line, execute: `python example.py`, replacing "example.py" with the name of a program.
 
@@ -17,13 +17,13 @@ pythonBasics.py, pythonConditionalProbability.py, pythonCovarianceCorrelation.py
 pythonLinearRegression.py, pythonMultivariateRegression.py, pythonPolynomialRegression.py, pythonTrainTest.py
 
 ### Machine learning Classification skills: 
-pythonNaiveBayes.py, pythonDecisionTree.py, pythonSVM.py, pythonKFoldCrossValidation.py, pythonMLTEST.py 
+pythonNaiveBayes.py, pythonDecisionTree.py, pythonKFoldCrossValidation.py, pythonMLTEST.py 
 
 ### Machine learning recommender system skills:
 pythonFindingSimilarMovies.py, pythonItemBasedCollaborativeFiltering.py
 
 ### Machine learning unsupervised skills: 
-pythonKMeans.py, pythonKNN.py, pythonPCA.py
+pythonKMeans.py, pythonKNN.py, pythonSVM.py, pythonPCA.py
 
 ### Machine learning spark skills:
 SparkLinearRegression.py, SparkDecisionTree.py, SparkKMeans.py
