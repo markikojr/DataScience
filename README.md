@@ -13,22 +13,22 @@ Directory contains folders with runnable sample python programs for machine lear
 ### Basic python programming skills: [python_basics](https://github.com/markikojr/DataScience/tree/master/python_basics)  
 pythonBasics.py, pythonConditionalProbability.py, pythonCovarianceCorrelation.py, pythonMatplotlib.py, pythonOutliers.py, pythonPandas.py, pythonStatistics.py
 
-### Machine learning regression skills: 
+### Machine learning regression skills: [regression](https://github.com/markikojr/DataScience/tree/master/regression)  
 pythonLinearRegression.py, pythonMultivariateRegression.py, pythonPolynomialRegression.py, pythonTrainTest.py
 
-### Machine learning Classification skills: 
+### Machine learning Classification skills: [classification](https://github.com/markikojr/DataScience/tree/master/classification) 
 pythonNaiveBayes.py, pythonDecisionTree.py, pythonKFoldCrossValidation.py, pythonMLTEST.py 
 
-### Machine learning recommender system skills:
+### Machine learning recommender system skills: [recommender_system](https://github.com/markikojr/DataScience/tree/master/recommender_system) 
 pythonFindingSimilarMovies.py, pythonItemBasedCollaborativeFiltering.py
 
-### Machine learning unsupervised skills: 
+### Machine learning unsupervised skills: [unsupervised_learning](https://github.com/markikojr/DataScience/tree/master/unsupervised_learning) 
 pythonKMeans.py, pythonKNN.py, pythonSVM.py, pythonPCA.py
 
-### Machine learning spark skills:
+### Machine learning spark skills: [spark](https://github.com/markikojr/DataScience/tree/master/spark) 
 SparkLinearRegression.py, SparkDecisionTree.py, SparkKMeans.py
 
-### Deep learning skills: 
+### Deep learning skills: [deep_learning](https://github.com/markikojr/DataScience/tree/master/deep_learning) 
 pythonKeras.py, pythonTensorFlow.py
 
 ### Data: 
