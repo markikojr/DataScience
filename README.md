@@ -23,7 +23,7 @@ pythonNaiveBayes.py, pythonDecisionTree.py, pythonKFoldCrossValidation.py, pytho
 pythonFindingSimilarMovies.py, pythonItemBasedCollaborativeFiltering.py
 
 ### Machine learning unsupervised skills: 
-pythonKMeans.py, pythonKNN.py, pythonPCA.py, pythonSVM.py
+pythonKMeans.py, pythonKNN.py, pythonSVM.py, pythonPCA.py
 
 ### Machine learning spark skills:
 SparkLinearRegression.py, SparkDecisionTree.py, SparkKMeans.py
