@@ -13,27 +13,16 @@ Directory contains folders with runnable sample python programs for machine lear
 ## Goal is to show:
 
 ### Basic python programming skills: [python_basics](https://github.com/markikojr/DataScience/tree/master/python_basics)  
-pythonBasics.py, pythonConditionalProbability.py, pythonCovarianceCorrelation.py, pythonMatplotlib.py, pythonOutliers.py, pythonPandas.py, pythonStatistics.py
 
 ### Machine learning regression skills: [regression](https://github.com/markikojr/DataScience/tree/master/regression)  
-pythonLinearRegression.py, pythonMultivariateRegression.py, pythonPolynomialRegression.py, pythonTrainTest.py
 
 ### Machine learning Classification skills: [classification](https://github.com/markikojr/DataScience/tree/master/classification) 
-pythonNaiveBayes.py, pythonDecisionTree.py, pythonKFoldCrossValidation.py, pythonMLTEST.py 
 
 ### Machine learning recommender system skills: [recommender_system](https://github.com/markikojr/DataScience/tree/master/recommender_system) 
-pythonFindingSimilarMovies.py, pythonItemBasedCollaborativeFiltering.py
 
 ### Machine learning unsupervised skills: [unsupervised_learning](https://github.com/markikojr/DataScience/tree/master/unsupervised_learning) 
-pythonKMeans.py, pythonKNN.py, pythonSVM.py, pythonPCA.py
 
 ### Machine learning spark skills: [spark](https://github.com/markikojr/DataScience/tree/master/spark) 
-SparkLinearRegression.py, SparkDecisionTree.py, SparkKMeans.py
 
 ### Deep learning skills: [deep_learning](https://github.com/markikojr/DataScience/tree/master/deep_learning) 
-pythonKeras.py, pythonTensorFlow.py
-
-### Data: 
-PastHires.csv, emails, ml-100k, mammographic_masses.names.txt, mammographic_masses.data.txt, house-votes-84.data.txt, house-votes-84.names.txt, regression.txt, subset-small.tsv
-
 ----------------------------
