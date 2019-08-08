@@ -1,7 +1,7 @@
 # Data Science Portfolio
 
 ## Description: Data Science, Machine Learning, Deep Learning and Python.
-Directory contains folders with runnable sample python programs for machine learning.
+Directory contains folders with runnable sample python programs for machine learning algorithms such as classification, regression, unsupervised, recommender system, deep learning, spark and python basics.
 
 ## To run:
 - First install python3 and libraries. Install the requirements for your project using `pip install -r requirements.txt`. 
