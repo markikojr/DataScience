@@ -10,7 +10,7 @@ Directory contains folders with runnable sample python programs for machine lear
 
 ## Goal is to show:
 
-### Basic python programming skills: 
+### Basic python programming skills: This is [an example](http://example.com/ "Title") inline link. 
 pythonBasics.py, pythonConditionalProbability.py, pythonCovarianceCorrelation.py, pythonMatplotlib.py, pythonOutliers.py, pythonPandas.py, pythonStatistics.py
 
 ### Machine learning regression skills: 
