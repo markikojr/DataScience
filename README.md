@@ -1,10 +1,10 @@
 # Data Science Portfolio
 
 ## Description: Data Science, Machine Learning, Deep Learning and Python.
-This directory contains runnable sample python programs for machine learning.
+Directory contains folders with runnable sample python programs for machine learning.
 
 ## To run:
-- first install python3 and the libraries.
+- first install python3 and libraries.
 - make sure to check the correct path to access the data for each program.
 - from the command line, execute: `python example.py`, replacing "example.py" with the name of a program.
 
