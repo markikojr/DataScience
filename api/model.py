@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import pickle
 from sklearn.linear_model import LinearRegression
-regressor = LinearRegression()
+
 
 #LOADING THE DATA
 dataset = pd.read_csv('/home/markjr/Documents/Data_science/api/hiring.csv')
@@ -39,6 +39,7 @@ y = dataset.iloc[:, -1]
 #SINCE WE HAVE A VERY SMALL DATASET, WE WILL TRAIN OUR MODEL WITH ALL AVAILABLE DATA
 
 #FITTING MODEL WITH TRAIN DATA
+regressor = LinearRegression()
 regressor.fit(X, y)
 
 #SAVING MODEL TO DISK
