@@ -26,6 +26,6 @@ This folder contains the HTML template to allow user to enter employee detail an
 ## Running the project
 1) From the command line, execute: `python model.py` to create the model and the serialized version of model to model.pkl.
 2) Execute: `python app.py` to start Flask API. Then navigate to URL generated. You should have a home page where you can insert values to predict salaries. 
-3) You can also execute: `python request.py` to send direct POST requests to FLask API using Python's inbuilt request module Run the beow command to send the request with some pre-popuated values.
+3) You can also execute: `python request.py` to send direct POST requests to Flask API using Python's inbuilt request module Run the beow command to send the request with some pre-popuated values.
 
 ----------------------------

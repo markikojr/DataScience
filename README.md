@@ -25,4 +25,6 @@ Directory contains folders with runnable sample python programs for machine lear
 ### Machine learning spark skills: [spark](https://github.com/markikojr/DataScience/tree/master/spark) 
 
 ### Deep learning skills: [deep_learning](https://github.com/markikojr/DataScience/tree/master/deep_learning) 
+
+### Flask API skills: [api](https://github.com/markikojr/DataScience/tree/master/api) 
 ----------------------------
