@@ -26,5 +26,5 @@ Directory contains folders with runnable sample python programs for machine lear
 
 ### Deep learning skills: [deep_learning](https://github.com/markikojr/DataScience/tree/master/deep_learning) 
 
-### Flask API skills: [api](https://github.com/markikojr/DataScience/tree/master/api) [sentiment_analysis_api](https://github.com/markikojr/DataScience/tree/master/sentiment_classifier_api) 
+### Flask API skills: [api](https://github.com/markikojr/DataScience/tree/master/api),  [sentiment_analysis_api](https://github.com/markikojr/DataScience/tree/master/sentiment_classifier_api) 
 ----------------------------
