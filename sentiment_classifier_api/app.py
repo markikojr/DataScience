@@ -61,17 +61,6 @@ def predict():
 
     return render_template('index.html', prediction_text = 'This comment "{}" is classified as {}.'.format(comment, m))
 
-#DECORATOR (WHERE THE URL IS '/predict_api', AND HANDLE POST REQUESTS)
-@app.route('/predict_api',methods=['POST'])
-def predict_api():
-    '''
-    Function for direct API calls trought request
-    '''
-    data = request.get_json(force=True)
-    prediction = model.predict([np.array(list(data.values()))])
-
-    output = prediction[0]
-    return jsonify(output)
 
 if __name__ == "__main__":
     app.run(debug=True)
