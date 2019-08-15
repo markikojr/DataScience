@@ -1,3 +1,7 @@
+'''
+This code will create a flask api (sentiment analysis) to receive comments and predict whether it's positive or negative.
+'''
+
 # -*- coding: utf-8 -*-
 import numpy as np
 import pandas as pd
@@ -12,7 +16,6 @@ app = Flask(__name__)
 #PATH TO LOAD THE LIST
 directory = "/home/markjr/Documents/Data_science/sentiment_classifier_api/"
 
-
 @app.route('/')
 def home():
     return render_template('index.html')
@@ -23,7 +26,7 @@ def predict():
     '''
     Function for rendering results on HTML GUI
     '''
-    #LOADING THE LIST
+    #LOADING THE TRAIN_ INFO TO BUILD THE MODEL
     with open (directory + "outfile", "rb") as fp:
          train_ = pickle.load(fp)
 
@@ -59,8 +62,8 @@ def predict():
            if n == 1: m = "Positve"
            else:      m = "Negative"
 
+    #RENDERING .HTML
     return render_template('index.html', prediction_text = 'This comment "{}" is classified as {}.'.format(comment, m))
-
 
 if __name__ == "__main__":
     app.run(debug=True)

@@ -87,6 +87,7 @@ classifier = model_building(train_, vectorizer)
 print(vectorizer)
 print(train_)
 
+#SAVING TRAIN_ INFO TO OUTPUT FILE
 with open(directory + "outfile", "wb") as fp:
     pickle.dump(train_, fp)
 
