@@ -1,7 +1,7 @@
 # Deep Learning
 
 ## Description: 
-projects to show how Deep Learning Models are built.
+Projects to show how Deep Learning Models are built.
 
 ## Prerequisites:
 - You must have python3 (Scikit Learn, Pandas, tensorflow and keras).
