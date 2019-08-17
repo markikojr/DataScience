@@ -1,8 +1,16 @@
+'''
+ This code is going to make predictions on the MNIST dataset which is a collection 
+ of 70,000 handwriting samples of the numbers 0-9. Our challenge is to predict which 
+ number each handwritten image represents. It talks about neural networks for image 
+ recognition using TENSORFLOW.
+'''
+
 import tensorflow as tf
 from tensorflow.examples.tutorials.mnist import input_data
 import matplotlib.pyplot as plt
 import numpy as np
-
+#---------------------------------------
+#TENSORFLOW EXAMPLE
 #SETTING UP THE TENSORS
 a = tf.Variable(1, name="a")
 b = tf.Variable(2, name="b")
@@ -13,6 +21,7 @@ init = tf.global_variables_initializer()
 with tf.Session() as s:
     init.run()
     print( f.eval() )
+#---------------------------------------
 
 sess = tf.InteractiveSession()
 
@@ -25,7 +34,7 @@ def display_sample(num):
     print(mnist.train.labels[num])  
     #Print the label converted back to a number
     label = mnist.train.labels[num].argmax(axis=0)
-    #Reshape the 768 values to a 28x28 image
+    #Reshape to a 28x28 image
     image = mnist.train.images[num].reshape([28,28])
     plt.title('Sample: %d  Label: %d' % (num, label))
     plt.imshow(image, cmap=plt.get_cmap('gray_r'))
@@ -34,6 +43,7 @@ def display_sample(num):
 display_sample(1234)
 display_sample(1015)
 
+#CHECKING THE WAY THE IS BEING FED INTO THE NEURAL NETWORK
 images = mnist.train.images[0].reshape([1,784])
 for i in range(1, 500):
     images = np.concatenate((images, mnist.train.images[i].reshape([1,784])))
@@ -41,10 +51,13 @@ plt.imshow(images, cmap=plt.get_cmap('gray_r'))
 #plt.show()
 
 #CREATING PLACEHOLDERS
-input_images = tf.placeholder(tf.float32, shape=[None, 784])
-target_labels = tf.placeholder(tf.float32, shape=[None, 10])
+input_images = tf.placeholder(tf.float32, shape=[None, 784]) #784 NEURONS
+target_labels = tf.placeholder(tf.float32, shape=[None, 10]) #10 ONE FOR EACH CATEGORY
 
-#RESERVING VARIABLES TO KEEP TRACK OF THE ALL THE WEIGHTS AND BIASES FOR BOTH LAYERS
+#RESERVING VARIABLES TO KEEP TRACK OF ALL THE WEIGHTS AND BIASES FOR BOTH LAYERS
+#One node per input pixel per image, or 784 nodes. 
+#That will feed into a hidden layer of some arbitrary size - let's pick 512. 
+#That hidden layer will output 10 values to be fed into softmax.
 hidden_nodes = 512
 input_weights = tf.Variable(tf.truncated_normal([784, hidden_nodes]))
 input_biases = tf.Variable(tf.zeros([hidden_nodes]))
@@ -53,8 +66,13 @@ hidden_weights = tf.Variable(tf.truncated_normal([hidden_nodes, 10]))
 hidden_biases = tf.Variable(tf.zeros([10]))
 
 #DEFINING THE CONNECTIONS FOR EACH LAYER
+#it multiplies these inputs by our input_weight tensor which will be learned over time
 input_layer = tf.matmul(input_images, input_weights)
+
+#feed that into hidden layer, apply ReLU to the weighted inputs with our learned biases added
 hidden_layer = tf.nn.relu(input_layer + input_biases)
+
+#output layer multiplies in the learned weights of hidden layer and adds in the hidden layer's bias
 digit_weights = tf.matmul(hidden_layer, hidden_weights) + hidden_biases
 
 #GETTING THE LOSS FUNCTION
