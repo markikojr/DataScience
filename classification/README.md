@@ -17,8 +17,8 @@ This contains code for classification using model to predict employment of speci
 ### Naive Bayes for classification: [NaiveBayes.py](https://github.com/markikojr/DataScience/blob/master/classification/NaiveBayes.py)  
 This contains code for classification using model to predict whether an email is spam or ham. It uses datasets inside emails folder to build the model.
 
-### Comparison between models: [MLTEST.py](https://github.com/markikojr/DataScience/blob/master/classification/MLTEST.py) 
-This contains code for classification using models to predict Flowers species from the Iris Flowers dataset.
+### Comparison between models: [ModelComparison.py](https://github.com/markikojr/DataScience/blob/master/classification/ModelComparison.py) 
+This contains code for classification using models to predict Flowers species from the Iris Flowers dataset and make model comparisons.
 
 ### Support Vector Machines for classification: [KFoldCrossValidation.py](https://github.com/markikojr/DataScience/blob/master/classification/KFoldCrossValidation.py) 
 This contains code for classification using model to predict Flowers species from the Iris Flowers dataset. It uses KFold Cross Validation to improve results avoiding overfitting.
