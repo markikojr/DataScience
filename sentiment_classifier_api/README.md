@@ -1,7 +1,7 @@
 # Machine_Learning-Model-Flask-Deployment
 
 ## Description: 
-Flask API demo project to show how Machine Learning Models are deployed on production
+Flask API project to show how Machine Learning Models are deployed on production
 
 ## Prerequisites:
 - You must have python3 (Scikit Learn, Pandas) and Flask installed.
