@@ -25,7 +25,7 @@ y = np.array(trainY)
 
 #POLYNOMIAL REGRESSION
 #GETTING X AND Y POLYNOMIAL FIT (Least squares polynomial fit, Returns a vector of coefficients p that minimises the squared error)
-p_values = np.polyfit(x, y, 10)
+p_values = np.polyfit(x, y, 8)
 print('-------')
 print ('p_values:',p_values)
 

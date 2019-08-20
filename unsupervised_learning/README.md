@@ -18,7 +18,7 @@ This contains code for clustering using KMeans model to cluster fake income/age 
 This code uses KNN model to define some distance metric between the items in your dataset, and find the K closest items.
 
 ### Principal Component Analysis: [PCA.py](https://github.com/markikojr/DataScience/blob/master/unsupervised_learning/PCA.py) 
-This contains code for classification using PCA model to predict Flowers species from the Iris Flowers dataset and make dimension reduction.
+This contains code for classification using PCA model to predict Flowers species from the Iris Flowers dataset and dimension reduction.
 
 ### Support Vector Machines: [SVM.py](https://github.com/markikojr/DataScience/blob/master/unsupervised_learning/SVM.py) 
 This contains code for classification using SVM model to cluster fake income/age for N people in different color regions.

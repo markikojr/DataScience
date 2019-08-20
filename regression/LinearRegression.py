@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 '''This program fabricates some data that shows a roughly linear
-relationship between page speed and amount purchased and it creates a
+relationship between a website page speed and amount purchased and it creates a
 linear regression prediction for the data points'''
 
 # -*- coding: utf-8 -*-
