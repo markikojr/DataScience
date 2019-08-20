@@ -1,3 +1,9 @@
+'''This program creates a model using Principal Component Analysis PCA
+which is dimensionality reduction technique applied to the Iris Flowers dataset.
+It lets you distill multi-dimensional data down to fewer dimensions, selecting 
+new dimensions that preserve variance in the data.
+'''
+
 from sklearn.datasets import load_iris
 from sklearn.decomposition import PCA
 import pylab as pl
