@@ -1,4 +1,4 @@
-# Unsupervised (Machine Learning)
+# Regression (Machine Learning)
 
 ## Description: 
 Projects to show how Regression Models are built.
