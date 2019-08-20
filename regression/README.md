@@ -20,7 +20,7 @@ This contains code for Polynomial Regression model to predict data points for a 
 ### Multivariate Regression: [MultivariateRegression.py](https://github.com/markikojr/DataScience/blob/master/regression/MultivariateRegression.py) 
 This contains code for Multivariate Regression to the price of cars based on their features.
 
-### Train and Test: [SVM.py](https://github.com/markikojr/DataScience/blob/master/regression/TrainTest.py) 
+### Train and Test: [TrainTest.py](https://github.com/markikojr/DataScience/blob/master/regression/TrainTest.py) 
 This contains code for Polynomial Regression model to predict data points for a website page speed and amount purchased in a non-linear relation making a comparison 
 between train and test data.
 
