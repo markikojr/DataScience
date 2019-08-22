@@ -14,6 +14,8 @@ Directory contains folders with runnable sample python programs for machine lear
 
 ### Basic python programming skills: [python_basics](https://github.com/markikojr/DataScience/tree/master/python_basics)  
 
+### Natural Language Processing skills: [NLP](https://github.com/markikojr/DataScience/tree/master/natural_language_processing)  
+
 ### Machine learning regression skills: [regression](https://github.com/markikojr/DataScience/tree/master/regression)  
 
 ### Machine learning Classification skills: [classification](https://github.com/markikojr/DataScience/tree/master/classification) 
