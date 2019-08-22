@@ -1,13 +1,18 @@
+'''This program  will construct a user/movie rating matrix.
+It is going to use the MovieLens dataset and the corrwith function 
+to compute the pairwise correlation of Star Wars movie user rating with every other movie.
+'''
+
 import pandas as pd
 import numpy as np
 
 #READING RATINGS DATA (READING 3 COLUMNS AND DEFINING THEIR NAMES)
 r_cols = ['user_id', 'movie_id', 'rating']
-ratings = pd.read_csv('/home/markjr/data_science/DataScience/DataScience-Python3/ml-100k/u.data', sep='\t', names=r_cols, usecols=range(3), encoding="ISO-8859-1")
+ratings = pd.read_csv('/home/markjr/Documents/Data_science/recommender_system/ml-100k/u.data', sep='\t', names=r_cols, usecols=range(3), encoding="ISO-8859-1")
 
 #READING MOVIES DATA (READING 2 COLUMNS AND DEFINING THEIR NAMES)
 m_cols = ['movie_id', 'title']
-movies = pd.read_csv('/home/markjr/data_science/DataScience/DataScience-Python3/ml-100k/u.item', sep='|', names=m_cols, usecols=range(2), encoding="ISO-8859-1")
+movies = pd.read_csv('/home/markjr/Documents/Data_science/recommender_system/ml-100k/u.item', sep='|', names=m_cols, usecols=range(2), encoding="ISO-8859-1")
 
 #MERGING FILES
 ratings = pd.merge(movies, ratings)
@@ -33,6 +38,10 @@ similarMovies = similarMovies.dropna()
 df = pd.DataFrame(similarMovies)
 print(df.head(10))
 
+#Our results are probably getting messed up by movies that have only been viewed by 
+#people who also happened to like Star Wars. So we need to get rid of movies that 
+#were only watched by a few people that are producing spurious results.
+
 #SORTING DESCENDING
 similarMovies.sort_values(ascending=False)
 
@@ -40,7 +49,7 @@ similarMovies.sort_values(ascending=False)
 movieStats = ratings.groupby('title').agg({'rating': [np.size, np.mean]})
 print(movieStats.head())
 
-#GETTING MOVIES WHERE THE SIZE OS RATINGS ARE >= 100 (WHICH ARE POPULAR MOVIES)
+#GETTING MOVIES WHERE THE SIZE OF RATINGS ARE >= 300 (WHICH ARE POPULAR MOVIES)
 popularMovies = movieStats['rating']['size'] >= 300
 
 #SORTING DESCENDING

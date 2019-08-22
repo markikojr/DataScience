@@ -3,11 +3,11 @@ import numpy as np
 
 #READING RATINGS DATA (READING 3 COLUMNS AND DEFINING THEIR NAMES)
 r_cols = ['user_id', 'movie_id', 'rating']
-ratings = pd.read_csv('/home/markjr/data_science/DataScience/DataScience-Python3/ml-100k/u.data', sep='\t', names=r_cols, usecols=range(3), encoding="ISO-8859-1")
+ratings = pd.read_csv('/home/markjr/Documents/Data_science/recommender_system/ml-100k/u.data', sep='\t', names=r_cols, usecols=range(3), encoding="ISO-8859-1")
 
 #READING MOVIES DATA (READING 2 COLUMNS AND DEFINING THEIR NAMES)
 m_cols = ['movie_id', 'title']
-movies = pd.read_csv('/home/markjr/data_science/DataScience/DataScience-Python3/ml-100k/u.item', sep='|', names=m_cols, usecols=range(2), encoding="ISO-8859-1")
+movies = pd.read_csv('/home/markjr/Documents/Data_science/recommender_system/ml-100k/u.item', sep='|', names=m_cols, usecols=range(2), encoding="ISO-8859-1")
 
 #MERGING FILES
 ratings = pd.merge(movies, ratings)
