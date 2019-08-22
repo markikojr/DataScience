@@ -18,10 +18,10 @@ This contains code for natural language processing using spacy library.
 This contains code for natural language processing using spacy library to apply tokenization.
 
 ### Lemmatization: [Lemmatization.py](https://github.com/markikojr/DataScience/blob/master/natural_language_processing/Lemmatization.py)  
-This contains code for natural language processing using nltk library to apply Lemmatization.
+This contains code for natural language processing using spacy library to apply Lemmatization.
 
 ### Stemming: [Stemming.py](https://github.com/markikojr/DataScience/blob/master/natural_language_processing/Stemming.py) 
-This contains code for natural language processing using spacy library to apply Stemming.
+This contains code for natural language processing using nltk library to apply Stemming.
 
 ### Stop Words: [StopWords.py](https://github.com/markikojr/DataScience/blob/master/natural_language_processing/StopWords.py) 
 This contains code for natural language processing using spacy library to deal with stop words.
