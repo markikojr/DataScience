@@ -14,6 +14,9 @@ Projects to show NLP analysis.
 ### Spacy Basics: [SpacyBasics.py](https://github.com/markikojr/DataScience/blob/master/natural_language_processing/SpacyBasics.py)  
 This contains code for natural language processing using spacy library.
 
+### NLTK Basics: [NLTKBasics.py](https://github.com/markikojr/DataScience/blob/master/natural_language_processing/NLTKBasics.py)  
+This contains code for natural language processing using NLTK library.
+
 ### Tokenization: [Tokenization.py](https://github.com/markikojr/DataScience/blob/master/natural_language_processing/Tokenization.py)  
 This contains code for natural language processing using spacy library to apply tokenization.
 
