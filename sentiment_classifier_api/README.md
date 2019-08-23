@@ -11,13 +11,13 @@ Flask API project to show how Machine Learning Models are deployed on production
 
 ## Project:
 
-### Machine Learning Model: [model.py](https://github.com/markikojr/DataScience/blob/master/api/model.py)  
+### Machine Learning Model: [model.py](https://github.com/markikojr/DataScience/blob/master/sentiment_classifier_api/model.py)  
 This contains code for our Machine Learning model to predict whether a comment is positive or negative. Sentences come from three different websites: imdb.com, amazon.com and yelp.com
 
-### Flask API: [app.py](https://github.com/markikojr/DataScience/blob/master/api/app.py)  
+### Flask API: [app.py](https://github.com/markikojr/DataScience/blob/master/sentiment_classifier_api/app.py)  
 This contains Flask APIs that receives the sentence through GUI or API calls, and predict the sentiment based on our model and returns it.
 
-### HTML: [index.html](https://github.com/markikojr/DataScience/blob/master/api/templates/index.html) 
+### HTML: [index.html](https://github.com/markikojr/DataScience/blob/master/sentiment:classifier_api/templates/index.html) 
 This folder contains the HTML template to allow user to enter details and displays the predicted sentiment.
 
 ## Running the project
