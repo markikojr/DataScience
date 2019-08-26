@@ -12,7 +12,9 @@ Directory contains folders with runnable sample python programs for machine lear
 
 ## Goal is to show:
 
-### Basic python programming skills: [python_basics](https://github.com/markikojr/DataScience/tree/master/python_basics)  
+### Flask API skills: [api](https://github.com/markikojr/DataScience/tree/master/api),  [sentiment_analysis_api](https://github.com/markikojr/DataScience/tree/master/sentiment_classifier_api) 
+
+### Flask API deployed to Heroku skills: [sentiment_analysis_app](https://github.com/markikojr/DataScience/tree/master/sentiment_analysis_app) 
 
 ### Natural Language Processing skills: [NLP](https://github.com/markikojr/DataScience/tree/master/natural_language_processing)  
 
@@ -28,5 +30,6 @@ Directory contains folders with runnable sample python programs for machine lear
 
 ### Deep learning skills: [deep_learning](https://github.com/markikojr/DataScience/tree/master/deep_learning) 
 
-### Flask API skills: [api](https://github.com/markikojr/DataScience/tree/master/api),  [sentiment_analysis_api](https://github.com/markikojr/DataScience/tree/master/sentiment_classifier_api) 
+### Basic python programming skills: [python_basics](https://github.com/markikojr/DataScience/tree/master/python_basics)  
+
 ----------------------------
