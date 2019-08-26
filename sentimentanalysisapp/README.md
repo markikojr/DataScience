@@ -11,13 +11,13 @@ Machine Learning Flask API project (Sentiment Analysis) deployed to Heroku on pr
 
 ## Project:
 
-### Machine Learning Model: [model.py](https://github.com/markikojr/DataScience/blob/master/sentiment_classifier_api/model.py)  
+### Machine Learning Model: [model.py](https://github.com/markikojr/DataScience/blob/master/sentimentanalysisapp/model.py)  
 This contains code for our Machine Learning model to predict whether a comment is positive or negative. Sentences come from three different websites: imdb.com, amazon.com and yelp.com
 
-### Flask API: [app.py](https://github.com/markikojr/DataScience/blob/master/sentiment_classifier_api/app.py)  
+### Flask API: [app.py](https://github.com/markikojr/DataScience/blob/master/sentimenanalysisapp/app.py)  
 This contains Flask APIs that receives the sentence through GUI or API calls, and predict the sentiment based on our model and returns it.
 
-### HTML: [index.html](https://github.com/markikojr/DataScience/blob/master/sentiment:classifier_api/templates/index.html) 
+### HTML: [index.html](https://github.com/markikojr/DataScience/blob/master/sentimentanalysisapp/templates/index.html) 
 This folder contains the HTML template to allow user to enter details and displays the predicted sentiment.
 
 ### Application can be found here: [App](https://sentimentanalysisapplication.herokuapp.com)  
