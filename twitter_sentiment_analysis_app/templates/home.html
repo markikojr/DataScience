@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+
+<body>
+ <center>
+  <div  class="login">
+	<!-- <div style="overflow-y: scroll;">-->
+	<h1>Sentiment Analysis</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="POST">
+	<p>Enter Your Search</p>
+     	<input style="float:left;" type="text" name="search" placeholder="Search" required="required" /> 
+	<p>Enter Your Start Date (format should be yyyy-mm-dd)</p>
+     	<input style="float:right;" type="text" name="start_date" placeholder="Start Date" required="required" /> 
+	<p>Enter Your End Date (format should be yyyy-mm-dd)</p>
+     	<input type="text" name="end_date" placeholder="End Date" required="required" /> 
+	<p>Enter Number of tweets to display</p>
+     	<input type="text" name="ntweets" placeholder="Number Of Tweets" required="required" /> 
+	<!--<textarea name="sentence"placeholder="Comment" rows="4" cols="50"></textarea> -->
+	<button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+  </div>
+ <center> 
+</body>
+</html>

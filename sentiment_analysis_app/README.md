@@ -4,7 +4,7 @@
 Machine Learning Flask API project (Sentiment Analysis) deployed to Heroku on production
 
 ## Prerequisites:
-- You must have python3 (Scikit Learn, Pandas), Flask and Heroku installed.
+- You must have python3 (Scikit Learn, Pandas and NLTK), Flask and Heroku installed.
 - Clone this repository to your computer.
 - Access files .py inside folders.
 - Make sure to check the correct path to access the data for each program.
@@ -28,10 +28,11 @@ This contains the app deployed to heroku.
 2) To start Flask API execute: `python app.py`. Make sure to change the path to access the training file to run locally. 
 3) Then navigate to URL generated. You should have a home page where you can insert text to predict.
 4) Preparing heroku using git. Execute `git init`, `git add .`, and `git commit -m "creating app"`.
-5) Login to heroku: `heroku login`. You should go to Heroku home page and create account first.
-6) Create app: `heroku apps:create appname`. Name should be unique.
-7) Deploy: `git push heroku master`
-8) Dyno: `heroku ps:scale web=1`
-9) Open app: `heroku open` 
+5) you should have Procfile, requirements.txt and nltk.txt files to run the project
+6) Login to heroku: `heroku login`. You should go to Heroku home page and create account first.
+7) Create app: `heroku apps:create appname`. Name should be unique.
+8) Deploy: `git push heroku master`
+9) Dyno: `heroku ps:scale web=1`
+10) Open app: `heroku open` 
 
 ----------------------------

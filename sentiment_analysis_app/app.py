@@ -1,5 +1,6 @@
 '''
-This code will create a flask api (sentiment analysis) to receive comments and predict whether it's positive or negative.
+This code will create a flask api (sentiment analysis) to receive comments and predict 
+whether it's positive, negative or neutral. It's going to use vader algorithm
 '''
 
 # -*- coding: utf-8 -*-
@@ -11,6 +12,18 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import BernoulliNB
 import sys
 import logging
+import nltk
+from nltk.sentiment.vader import SentimentIntensityAnalyzer
+
+#Set up vader analyzer
+analyzer = SentimentIntensityAnalyzer()
+nltk.download('vader_lexicon')
+
+#Get vader scores
+def get_vader_score(sentence):
+    score = analyzer.polarity_scores(sentence)
+
+    return score['compound'], score['pos'], score['neg'], score['neu']
 
 #CREATING AN INSTANCE OF THE FLASK CLASS
 app = Flask(__name__)
@@ -32,7 +45,7 @@ def home():
 def predict():
     '''
     Function for rendering results on HTML GUI
-    '''
+    
     #LOADING THE TRAIN_ INFO TO BUILD THE MODEL
     with open (directory + "outfile", "rb") as fp:
          train_ = pickle.load(fp)
@@ -49,12 +62,13 @@ def predict():
 
     #BUILDING THE MODEL
     classifier = BernoulliNB().fit(sentence, label)
-
+    '''
     #ACCESSING COMMENTS FROM WEB API
     if request.method == 'POST': 
        comment = request.form['comment']
-       data = [comment]
-
+       #data = [comment]
+       data = comment
+       '''  
        #VECTORIZING
        vector = vectorizer.transform(data).toarray()
 
@@ -68,6 +82,22 @@ def predict():
            n = int(n)
            if n == 1: m = "Positve"
            else:      m = "Negative"
+       '''
+       compound, positive, negative, neutral = get_vader_score(data) #vader scores
+
+
+    #TRANSLATING RESULT TO POSITIVE, NEGATIVE OR NEUTRAL
+       m = ""
+       n = compound
+       float(n)
+       if n >= 0.05:
+          m = "Positve"
+ 
+       elif n <= -0.05:
+            m = "Negative"
+
+       else:
+            m = "Neutral"
 
     #RENDERING .HTML
     return render_template('index.html', prediction_text = 'This comment "{}" is classified as {}.'.format(comment, m))

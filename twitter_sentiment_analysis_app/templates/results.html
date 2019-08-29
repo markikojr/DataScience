@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+
+<body>
+ <center> 
+  <form>
+   <input type="button" value="New Search" onclick="history.back()">
+  </form>
+ <center> 
+  <ul>
+	<h1 style="font-size:130%; font-family:Verdana, sans-serif;">Tweets for "{{search}}" from {{start_date}} to {{end_date}}:</h1>
+
+	<p style="font-size:80%; font-family:Verdana, sans-serif;">{{num_of_tweets}} Tweets analysed. Sentiment score Mean: {{mean_score}} (-1.0 negative to 1.0 positive).</p>
+
+	<p style="font-size:80%; font-family:Verdana, sans-serif;">Positives: {{number_of_positives}}, Negatives: {{number_of_negatives}} and Neutrals: {{number_of_neutrals}}.</p>
+	<br>	
+
+	{% for i in range(num_of_tweets) %}
+	{{tweet_dict['tweets'][i]['score']}} {{tweet_dict['tweets'][i]['text']}} <br>        
+        {% endfor %}
+  </ul>
+
+ <center> 
+  <form>
+   <input type="button" value="New Search" onclick="history.back()">
+  </form>
+ <center> 
+
+</body>
+</html>

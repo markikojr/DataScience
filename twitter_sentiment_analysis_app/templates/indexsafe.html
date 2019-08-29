@@ -1,0 +1,8 @@
+
+    {% for i in range(num_tweets) %}
+
+    <li style="list-style:square; font-size:70%; font-family:Verdana, sans-serif;">
+    <p>{{user_dict['tweets'][i]['score']}}: {{tweet_dict['tweets'][i]['text']}}</p>
+    </li>
+
+    {% endfor %}
