@@ -1,7 +1,7 @@
 # Data Science Portfolio
 
 ## Description: Data Science, Machine Learning, Deep Learning and Python.
-Directory contains folders with runnable sample python programs for machine learning algorithms such as projects in classification, regression, natural language processing, unsupervised learning, recommender system, deep learning, flask api, spark and python basics.
+Directory contains folders with runnable sample python programs for machine learning algorithms such as projects in classification, regression, natural language processing, unsupervised learning, recommender system, deep learning, flask api, software deployment, spark and python basics.
 
 ## To run:
 - First install python3 and libraries. Install the requirements for your project using `pip install -r requirements.txt`. 
@@ -14,7 +14,7 @@ Directory contains folders with runnable sample python programs for machine lear
 
 ### Flask API skills: [api](https://github.com/markikojr/DataScience/tree/master/api),  [sentiment_analysis_api](https://github.com/markikojr/DataScience/tree/master/sentiment_classifier_api) 
 
-### Deployement (Heroku) skills: [sentiment_analysis_app](https://github.com/markikojr/DataScience/tree/master/sentiment_analysis_app), [twitter_sentiment_analysis_app](https://github.com/markikojr/DataScience/tree/master/twitter_sentiment_analysis_app) 
+### Deployment (Heroku) skills: [sentiment_analysis_app](https://github.com/markikojr/DataScience/tree/master/sentiment_analysis_app), [twitter_sentiment_analysis_app](https://github.com/markikojr/DataScience/tree/master/twitter_sentiment_analysis_app) 
 
 ### Natural Language Processing skills: [NLP](https://github.com/markikojr/DataScience/tree/master/natural_language_processing)  
 
