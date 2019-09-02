@@ -20,10 +20,8 @@
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="POST">
-	<p>Enter Your Search</p>
+	<p>Enter Your Search (in English)</p>
      	<input style="float:left;" type="text" name="search" placeholder="Search" required="required" /> 
-	<p>Enter Your Start Date (format should be yyyy-mm-dd)</p>
-     	<input style="float:right;" type="text" name="start_date" placeholder="Start Date" required="required" /> 
 	<p>Enter Your End Date (format should be yyyy-mm-dd)</p>
      	<input type="text" name="end_date" placeholder="End Date" required="required" /> 
 	<p>Enter Number of tweets to display</p>

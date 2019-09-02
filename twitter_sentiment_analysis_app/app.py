@@ -55,13 +55,11 @@ def predict():
     politician_name = "emmanuelmacron"
     search = "Brazil"
     number_of_tweets = 200
-    start_date = '2019-01-01'
     end_date = '2019-08-02'
 
     #ACCESSING COMMENTS FROM WEB API
     if request.method == 'POST': 
-       search_term      = request.form['search']
-       start_date       = request.form['start_date']
+       search           = request.form['search']
        end_date         = request.form['end_date']
        number_of_tweets = request.form['ntweets']
        number_of_tweets = int(number_of_tweets)
@@ -70,7 +68,7 @@ def predict():
        #tweets = tweepy.Cursor(api.user_timeline, screen_name=politician_name, count = 100).items(number_of_tweets)
 
        #Use this to check tweets about a person or something
-       tweets = tweepy.Cursor(api.search, q=search_term, lang="en", since=start_date, until=end_date).items(number_of_tweets)
+       tweets = tweepy.Cursor(api.search, q=search, lang="en", until=end_date).items(number_of_tweets)
 
        #Create dictionary
        user_dict = {'tweets': []}
@@ -117,7 +115,7 @@ def predict():
               time.sleep(60)
 
     #RENDERING .HTML
-    return render_template('results.html', search = search, start_date = start_date, end_date = end_date, mean_score = mean_score ,num_of_tweets = num_of_tweets, tweet_dict = user_dict, number_of_positives = number_of_positives, number_of_negatives = number_of_negatives, number_of_neutrals = number_of_neutrals)
+    return render_template('results.html', search = search, end_date = end_date, mean_score = mean_score ,num_of_tweets = num_of_tweets, tweet_dict = user_dict, number_of_positives = number_of_positives, number_of_negatives = number_of_negatives, number_of_neutrals = number_of_neutrals)
 
 if __name__ == "__main__":
     app.run(debug=True)
