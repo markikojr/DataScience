@@ -1,3 +1,7 @@
+'''
+This program shows how to check the degree of similarities
+'''
+
 # Import spaCy and load the language library
 import spacy
 nlp = spacy.load('en_core_web_md')
