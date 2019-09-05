@@ -14,8 +14,8 @@ Projects to show NLP analysis.
 ### Sentiment Analysis: [SentimentAnalysis.py](https://github.com/markikojr/DataScience/blob/master/natural_language_processing/SentimentAnalysis.py)
 This contains code for natural language processing using NLTK library. It uses vader algorithm to performe sentiment analysis on reviews (data from amazon)
 
-### Latent Dirichlet Allocation: [LatentDirichletAllocation.py](https://github.com/markikojr/DataScience/blob/master/natural_language_processing/LatentDirichletAllocation.py)
-This contains code for natural language processing using Latent Dirichlet Allocation LDA. It uses LDA algorithm to performe analysis on articles (data from National Public Radio, obtained from their website www.npr.org) to cluster topics.
+### Topic Modeling: [TopicModeling.py](https://github.com/markikojr/DataScience/blob/master/natural_language_processing/TopicModeling.py)
+This contains code for natural language processing using Latent Dirichlet Allocation (LDA) and Non-negative Matrix Factorization (NMF). It uses LDA/NMF algorithm to performe analysis on articles (data from National Public Radio, obtained from their website www.npr.org) to cluster topics.
 
 ### Spam Classifier: [SpamClassifier.py](https://github.com/markikojr/DataScience/blob/master/natural_language_processing/SpamClassifier.py)  
 This contains code for natural language processing using SVM classification model and TF-IDF to classify message in spam or ham.
