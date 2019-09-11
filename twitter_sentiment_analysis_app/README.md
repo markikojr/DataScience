@@ -12,7 +12,7 @@
 ## Project:
 
 ### Flask API: [app.py](https://github.com/markikojr/DataScience/blob/master/twitter_sentiment_analysis_app/app.py)  
-This contains Flask APIs that receives the search, startdate, enddate and number of tweets through GUI, predicts the sentiment based on model and returns whether a tweet is positive, negative or neutral.
+This contains Flask APIs that receives the search and number of tweets through GUI, predicts the sentiment based on model and returns whether a tweet is positive, negative or neutral.
 
 ### Home HTML: [home.html](https://github.com/markikojr/DataScience/blob/master/twitter_sentiment_analysis_app/templates/home.html) 
 This folder contains the HTML template to allow user to enter details and predict sentiment.
