@@ -18,6 +18,8 @@ Directory contains folders with runnable sample python programs for machine lear
 
 ### Natural Language Processing skills: [NLP](https://github.com/markikojr/DataScience/tree/master/natural_language_processing)  
 
+### Python for Finance Algorithmic Trading skills: [Finance](https://github.com/markikojr/DataScience/tree/master/finance)  
+
 ### Machine learning regression skills: [regression](https://github.com/markikojr/DataScience/tree/master/regression)  
 
 ### Machine learning Classification skills: [classification](https://github.com/markikojr/DataScience/tree/master/classification) 

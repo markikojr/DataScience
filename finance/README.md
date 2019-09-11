@@ -1,4 +1,4 @@
-#  (Python For Finance: Algorithmic Trading)
+#  Python For Finance: Algorithmic Trading
 
 ## Description: 
 Projects to show how to analyse and build models applied to Finance.
@@ -26,7 +26,7 @@ This contains code for Python Finance using pandas to load SP500 data from web.
 ### Companies correlation: [CompaniesCorr.py](https://github.com/markikojr/DataScience/blob/master/finance/CompaniesCorr.py)  
 This contains code for Python Finance using pandas and matplotlib to calculate correlation between companies.
 
-### Buy, sell or hold classifier using Machine Learning: [ProcessingDataMachineLearning.py](https://github.com/markikojr/DataScience/blob/master/finance/ProcessingDataMachineLearning.py)  
+### Buy, Sell or Hold classifier using Machine Learning: [ProcessingDataMachineLearning.py](https://github.com/markikojr/DataScience/blob/master/finance/ProcessingDataMachineLearning.py)  
 This contains code for Python Finance using Machine Learning algorithms to create a classifier to decide whether to buy, sell or hold a stock..
 
 ### Resample: [Resample.py](https://github.com/markikojr/DataScience/blob/master/finance/Resample.py)  
