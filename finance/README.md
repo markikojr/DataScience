@@ -3,24 +3,6 @@
 ## Description: 
 Projects to show how to analyse and build models applied to Finance.
 
-### Open: 
-The price of the stock at the beginning of the trading day (it need not be the closing price of the previous trading day).
-
-### High:
-The highest price of the stock on that trading day. 
-
-### Low: 
-the lowest price of the stock on that trading day. 
-
-### Close:
-The price of the stock at closing time. 
-
-# Volume:
-Indicates how many stocks were traded.
-
-### Adjusted prices: 
-The price of the stock that adjusts the price for corporate actions. While stock prices are considered to be set mostly by traders, stock splits (when the company makes each extant stock worth two and halves the price) and dividends (payout of company profits per share) also affect the price of a stock and should be accounted for.
-
 ## Prerequisites:
 - You must have python3 (Scikit Learn, Numpy, pickle, Matplotlib, Counter, datetime, yfinance, pandas_datareader and Pandas).
 - Clone this repository to your computer.
@@ -68,8 +50,27 @@ This contains code for Python Finance using pandas to load .csv files.
 ### Basic Informations about Stock Prices: [BasicInfo.py](https://github.com/markikojr/DataScience/blob/master/finance/BasicInfo.py)  
 This contains code for Python Finance using pandas to load .csv files and print some useful informations about stock prices.
 
-
 ## Running the project
 1) Open terminal execute `python name.py`
 
-----------------------------
+## Observations:
+
+### Open: 
+The price of the stock at the beginning of the trading day (it need not be the closing price of the previous trading day).
+
+### High:
+The highest price of the stock on that trading day. 
+
+### Low: 
+the lowest price of the stock on that trading day. 
+
+### Close:
+The price of the stock at closing time. 
+
+### Volume:
+Indicates how many stocks were traded.
+
+### Adjusted prices: 
+The price of the stock that adjusts the price for corporate actions. While stock prices are considered to be set mostly by traders, stock splits (when the company makes each extant stock worth two and halves the price) and dividends (payout of company profits per share) also affect the price of a stock and should be accounted for.
+
+--------------------------
