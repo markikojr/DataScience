@@ -30,6 +30,7 @@ s = "AAPL"
 apple = quandl.get("WIKI/" + s, start_date=start, end_date=end)
 
 # Print info
+print("Info from Apple:")
 print(type(apple))
 print(apple.head())
 
@@ -147,6 +148,7 @@ stocks = pd.DataFrame({"AAPL": apple["Adj. Close"],
                       "GOOG": google["Adj. Close"]})
 
 # Print some info and plot
+print("Info (Adj. Close) from Apple, Microsoft and Google:")
 print(stocks.head())
 
 # Plot Comparison
@@ -171,6 +173,7 @@ ax3.set_title("Adj. Close")
 # Stock’s return since the beginning of the period of interest
 stock_return = stocks.apply(lambda x: x / x[0])
 # Print some info 
+print("Info (Return Since Beginning) from Apple, Microsoft and Google:")
 print(stock_return.head() - 1)
 
 # Plot result
@@ -184,6 +187,7 @@ ax4.set_title("Return Since Beginning")
 # Log difference
 #--------------------------
 stock_change = stocks.apply(lambda x: np.log(x) - np.log(x.shift(1))) # shift moves dates back by 1.
+print("Info (Log Difference) from Apple, Microsoft and Google:")
 print(stock_change.head())
 
 fig5, ax5 = plt.subplots()
@@ -200,6 +204,7 @@ spyder = web.DataReader("SPY", "yahoo", start, end)
 
 # Join to stocks and print info
 stocks = stocks.join(spyder.loc[:, "Adj Close"]).rename(columns={"Adj Close": "SPY"})
+print("Info (Adj. Close) from Apple, Microsoft, Google and Market(SPY):")
 print(stocks.head())
 
 # Calculate return from beginning
@@ -227,10 +232,12 @@ ax7.set_title("Log Difference")
 #--------------------------
 # Annual percentage rate (APR)
 stock_change_apr = stock_change * 252 * 100    # There are 252 trading days in a year; the 100 converts to percentages
+print("Annual Percentage Rate (APR):")
 print(stock_change_apr.tail())
 
 # Treasury bills (risk free rate)
 tbill = quandl.get("FRED/TB3MS", start_date=start, end_date=end)
+print("Treasury Bills (risk free rate):")
 print(tbill.tail())
 
 fig8, ax8 = plt.subplots()
@@ -241,10 +248,12 @@ ax8.set_title("U.S. Treasury Bill Rate")
 
 # Get the most recent Treasury Bill rate
 rrf = tbill.iloc[-1, 0]    
+print("Most Recent Treasury Bills Rate:")
 print(rrf)
 
 # How much each stock is correlated to SPY
 smcorr = stock_change_apr.drop("SPY", 1).corrwith(stock_change_apr.SPY)    
+print("Correlation Between Stocks and Market:")
 print(smcorr)                                                                           
 
 # Standard deviation for stocks (volatility) 
@@ -254,26 +263,34 @@ sy = stock_change_apr.drop("SPY", 1).std()
 sx = stock_change_apr.SPY.std()
 
 # Print volatility
+print("Volatility From Stocks:")
 print(sy)
+print("Volatility From Market:")
 print(sx)
 
 # Sample means - most recent bill rate
 ybar = stock_change_apr.drop("SPY", 1).mean() - rrf
 xbar = stock_change_apr.SPY.mean() - rrf
+print("Mean - Most Recent Bill Rate (Stocks):")
 print(ybar)
+print("Mean - Most Recent Bill Rate (Market):")
 print(xbar)
 
 # Beta and alpha (Beta is how much a stock moves in relation to the market; alpha is average excess return over the market)
 beta = smcorr * sy / sx
 alpha = ybar - beta * xbar
+print("Stock Moves In Relation To The Market:")
 print(beta)
+print("Average Excess Return Over The Market:")
 print(alpha)
 
 #Sharpe ratio for stocks (A large Sharpe ratio indicates that the stock's excess returns are large relative to the stock's volatilitly)
 sharpe = (ybar - rrf)/sy
+print("Sharpe Ratio (Stocks):")
 print(sharpe)
 
 #Sharpe ratio for market
+print("Sharpe Ratio (Market):")
 print((xbar - rrf)/sx)
 #--------------------------
 
@@ -303,6 +320,7 @@ pandas_candlestick_ohlc(apple.loc['2016-01-04':'2016-12-31',:], otherseries = ["
 # Trading strategy (moving average crossover)
 #--------------------------
 apple['20d-50d'] = apple['20d'] - apple['50d']
+print("Apple (Moving Average):")
 print(apple.tail())
 
 # Regime
@@ -321,6 +339,7 @@ ax9.set_ylabel('Regime Value')
 ax9.set_title("Regime")
 
 # Print regime counts
+print("Regime Counts:")
 print(apple["Regime"].value_counts())
 
 # To ensure that all trades close out, I temporarily change the regime of the last row to 0
@@ -332,6 +351,7 @@ apple["Signal"] = np.sign(apple["Regime"] - apple["Regime"].shift(1))
 
 # Restore original regime data
 apple.loc[:, "Regime"].iloc[-1] = regime_orig
+print("Apple Regime and Signal:")
 print(apple.tail(10))
 
 # Plot result
@@ -343,12 +363,15 @@ ax10.set_ylabel('Signal Value')
 ax10.set_title("Signal")
 
 # Print signal counts
+print("Apple Signal Counts:")
 print(apple["Signal"].value_counts())
 
 # Print prices of the stock at every buy 
+print("Apple Price For Every Buy:")
 print(apple.loc[apple["Signal"] == 1, "Close"])
 
 # Print prices of the stock at every sell 
+print("Apple Price For Every Sell:")
 print(apple.loc[apple["Signal"] == -1, "Close"])
 
 # Create a DataFrame with trades, including the price at the trade and the regime under which the trade is made.
@@ -363,6 +386,7 @@ apple_signals = pd.concat([
 apple_signals.sort_index(inplace = True)
 
 # Print data frame including the price at the trade and the regime under which the trade is made.
+print("Apple Price, Regime and Signal:")
 print(apple_signals)
 
 # Let's see the profitability of long trades
@@ -378,6 +402,7 @@ apple_long_profits = pd.DataFrame({
     })
 
 # Print data frame the profitability of long trades
+print("Apple Price, Profit and End Date:")
 print(apple_long_profits)
 
 # We need to get the low of the price during each trade.
@@ -386,6 +411,7 @@ tradeperiods = pd.DataFrame({"Start": apple_long_profits.index,
 apple_long_profits["Low"] = tradeperiods.apply(lambda x: min(apple.loc[x["Start"]:x["End"], "Adj. Low"]), axis = 1)
 
 # Print result
+print("Apple Price, Profit, End Date and Low Price:")
 print(apple_long_profits)
 #--------------------------
 
@@ -430,6 +456,7 @@ for index, row in apple_long_profits.iterrows():
     cash = max(0, cash + profit)
 
 # Print data frame simulate this strategy in apple_adj_long_profits
+print("Apple BackTest:")
 print(apple_backtest)
 
 # Plot results
