@@ -12,26 +12,26 @@ Directory contains folders with runnable sample python programs for machine lear
 
 ## Goal is to show:
 
-### Flask API skills: [api](https://github.com/markikojr/DataScience/tree/master/api),  [sentiment_analysis_api](https://github.com/markikojr/DataScience/tree/master/sentiment_classifier_api) 
+### Flask API skills: [Api](https://github.com/markikojr/DataScience/tree/master/api),  [Sentiment_Analysis_Api](https://github.com/markikojr/DataScience/tree/master/sentiment_classifier_api) 
 
-### Deployment (Heroku) skills: [sentiment_analysis_app](https://github.com/markikojr/DataScience/tree/master/sentiment_analysis_app), [twitter_sentiment_analysis_app](https://github.com/markikojr/DataScience/tree/master/twitter_sentiment_analysis_app) 
+### Deployment (Heroku) skills: [Sentiment_Analysis_App](https://github.com/markikojr/DataScience/tree/master/sentiment_analysis_app), [Twitter_Sentiment_Analysis_App](https://github.com/markikojr/DataScience/tree/master/twitter_sentiment_analysis_app) 
 
 ### Natural Language Processing skills: [NLP](https://github.com/markikojr/DataScience/tree/master/natural_language_processing)  
 
 ### Python for Finance Algorithmic Trading skills: [Finance](https://github.com/markikojr/DataScience/tree/master/finance)  
 
-### Machine learning regression skills: [regression](https://github.com/markikojr/DataScience/tree/master/regression)  
+### Machine learning regression skills: [Regression](https://github.com/markikojr/DataScience/tree/master/regression)  
 
-### Machine learning Classification skills: [classification](https://github.com/markikojr/DataScience/tree/master/classification) 
+### Machine learning Classification skills: [Classification](https://github.com/markikojr/DataScience/tree/master/classification) 
 
-### Machine learning recommender system skills: [recommender_system](https://github.com/markikojr/DataScience/tree/master/recommender_system) 
+### Machine learning recommender system skills: [Recommender_System](https://github.com/markikojr/DataScience/tree/master/recommender_system) 
 
-### Machine learning unsupervised skills: [unsupervised_learning](https://github.com/markikojr/DataScience/tree/master/unsupervised_learning) 
+### Machine learning unsupervised skills: [Unsupervised_Learning](https://github.com/markikojr/DataScience/tree/master/unsupervised_learning) 
 
-### Machine learning spark skills: [spark](https://github.com/markikojr/DataScience/tree/master/spark) 
+### Machine learning spark skills: [Spark](https://github.com/markikojr/DataScience/tree/master/spark) 
 
-### Deep learning skills: [deep_learning](https://github.com/markikojr/DataScience/tree/master/deep_learning) 
+### Deep learning skills: [Deep_Learning](https://github.com/markikojr/DataScience/tree/master/deep_learning) 
 
-### Basic python programming skills: [python_basics](https://github.com/markikojr/DataScience/tree/master/python_basics)  
+### Basic python programming skills: [Python_Basics](https://github.com/markikojr/DataScience/tree/master/python_basics)  
 
 ----------------------------
