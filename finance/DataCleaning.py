@@ -132,5 +132,6 @@ print(df.head())
 print ("-----------CHECKING STATISTICS-------------")
 print(df.describe())
 
-
+# Save data
+df.to_csv('data_corrected.csv')
 
