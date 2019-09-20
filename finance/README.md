@@ -38,6 +38,9 @@ This contains code for Python Finance using pandas to calculate moving average.
 ### Resample: [Resample.py](https://github.com/markikojr/DataScience/blob/master/finance/Resample.py)  
 This contains code for Python Finance using pandas to resample the data.
 
+### Data Cleaning: [DataCleaning.py](https://github.com/markikojr/DataScience/blob/master/finance/Cleaning.py)  
+This contains code for Python Finance using pandas to process data detecting and correcting (or removing) corrupt or inaccurate records from a record set, and refers to identifying incomplete, incorrect, inaccurate or irrelevant parts of the data and then replacing, modifying, or deleting.
+
 ### SP500 Data from Web: [SP500Data.py](https://github.com/markikojr/DataScience/blob/master/finance/SP500Data.py)  
 This contains code for Python Finance using pandas to load SP500 data from web.
 
@@ -47,8 +50,6 @@ This contains code for Python Finance using pandas to load .csv files from web.
 ### Data from CSV: [DataFromCSV.py](https://github.com/markikojr/DataScience/blob/master/finance/DataFromCSV.py)  
 This contains code for Python Finance using pandas to load .csv files.
 
-### Basic Informations about Stock Prices: [BasicInfo.py](https://github.com/markikojr/DataScience/blob/master/finance/BasicInfo.py)  
-This contains code for Python Finance using pandas to load .csv files and print some useful informations about stock prices.
 
 ## Running the project
 1) Open terminal execute `python name.py`
