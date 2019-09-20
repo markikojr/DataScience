@@ -12,9 +12,9 @@ Directory contains folders with runnable sample python programs for machine lear
 
 ## Goal is to show:
 
-### Flask API skills: [Api](https://github.com/markikojr/DataScience/tree/master/api),  [Sentiment_Analysis_Api](https://github.com/markikojr/DataScience/tree/master/sentiment_classifier_api) 
+### Flask API Skills: [Api](https://github.com/markikojr/DataScience/tree/master/api),  [Sentiment_Analysis_Api](https://github.com/markikojr/DataScience/tree/master/sentiment_classifier_api) 
 
-### Deployment (Heroku) skills: [Sentiment_Analysis_App](https://github.com/markikojr/DataScience/tree/master/sentiment_analysis_app), [Twitter_Sentiment_Analysis_App](https://github.com/markikojr/DataScience/tree/master/twitter_sentiment_analysis_app) 
+### Deployment (Heroku) Skills: [Sentiment_Analysis_App](https://github.com/markikojr/DataScience/tree/master/sentiment_analysis_app), [Twitter_Sentiment_Analysis_App](https://github.com/markikojr/DataScience/tree/master/twitter_sentiment_analysis_app) 
 
 ### Natural Language Processing Skills: [NLP](https://github.com/markikojr/DataScience/tree/master/natural_language_processing)  
 
