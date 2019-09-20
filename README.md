@@ -16,22 +16,22 @@ Directory contains folders with runnable sample python programs for machine lear
 
 ### Deployment (Heroku) skills: [Sentiment_Analysis_App](https://github.com/markikojr/DataScience/tree/master/sentiment_analysis_app), [Twitter_Sentiment_Analysis_App](https://github.com/markikojr/DataScience/tree/master/twitter_sentiment_analysis_app) 
 
-### Natural Language Processing skills: [NLP](https://github.com/markikojr/DataScience/tree/master/natural_language_processing)  
+### Natural Language Processing Skills: [NLP](https://github.com/markikojr/DataScience/tree/master/natural_language_processing)  
 
-### Python for Finance Algorithmic Trading skills: [Finance](https://github.com/markikojr/DataScience/tree/master/finance)  
+### Python for Finance Algorithmic Trading Skills: [Finance](https://github.com/markikojr/DataScience/tree/master/finance)  
 
-### Machine learning regression skills: [Regression](https://github.com/markikojr/DataScience/tree/master/regression)  
+### Machine Learning Regression Skills: [Regression](https://github.com/markikojr/DataScience/tree/master/regression)  
 
-### Machine learning Classification skills: [Classification](https://github.com/markikojr/DataScience/tree/master/classification) 
+### Machine Learning Classification Skills: [Classification](https://github.com/markikojr/DataScience/tree/master/classification) 
 
-### Machine learning recommender system skills: [Recommender_System](https://github.com/markikojr/DataScience/tree/master/recommender_system) 
+### Machine Learning Recommender System Skills: [Recommender_System](https://github.com/markikojr/DataScience/tree/master/recommender_system) 
 
-### Machine learning unsupervised skills: [Unsupervised_Learning](https://github.com/markikojr/DataScience/tree/master/unsupervised_learning) 
+### Machine Learning Unsupervised Skills: [Unsupervised_Learning](https://github.com/markikojr/DataScience/tree/master/unsupervised_learning) 
 
-### Machine learning spark skills: [Spark](https://github.com/markikojr/DataScience/tree/master/spark) 
+### Machine Learning Spark Skills: [Spark](https://github.com/markikojr/DataScience/tree/master/spark) 
 
-### Deep learning skills: [Deep_Learning](https://github.com/markikojr/DataScience/tree/master/deep_learning) 
+### Deep Learning Skills: [Deep_Learning](https://github.com/markikojr/DataScience/tree/master/deep_learning) 
 
-### Basic python programming skills: [Python_Basics](https://github.com/markikojr/DataScience/tree/master/python_basics)  
+### Basic Python Programming Skills: [Python_Basics](https://github.com/markikojr/DataScience/tree/master/python_basics)  
 
 ----------------------------
