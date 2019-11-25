@@ -26,7 +26,7 @@ This contains code for data premium_students.json processing.
 ### Premium Payments: [premium_payments](https://github.com/markikojr/DataScience/blob/master/desafio_passei_direto/premium_payments.py) 
 This contains code for data premium_payments.json processing.
 
-### Evaluation: [evaluation](https://github.com/markikojr/DataScience/blob/master/desafio_passei_direto/premium_evaluations.py) 
+### Evaluation: [evaluation](https://github.com/markikojr/DataScience/blob/master/desafio_passei_direto/evaluations.py) 
 This contains code for data evaluation.json processing.
 
 ### Premium Cancellations: [premium_cancellations](https://github.com/markikojr/DataScience/blob/master/desafio_passei_direto/premium_cancellations.py) 
