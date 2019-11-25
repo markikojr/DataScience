@@ -26,7 +26,7 @@ This contains code for data premium_students.json processing.
 ### Premium Payments: [premium_payments](https://github.com/markikojr/DataScience/blob/master/desafio_passei_direto/premium_payments.py) 
 This contains code for data premium_payments.json processing.
 
-### Evaluation: [evaluation](https://github.com/markikojr/DataScience/blob/master/desafio_passei_direto/premium_evaluation.py) 
+### Evaluation: [evaluation](https://github.com/markikojr/DataScience/blob/master/desafio_passei_direto/premium_evaluations.py) 
 This contains code for data evaluation.json processing.
 
 ### Premium Cancellations: [premium_cancellations](https://github.com/markikojr/DataScience/blob/master/desafio_passei_direto/premium_cancellations.py) 
@@ -44,7 +44,7 @@ This contains code for question3 processing.
 ### Question6: [question6](https://github.com/markikojr/DataScience/blob/master/desafio_passei_direto/question6.py) 
 This contains code for question6 processing.
 
-### Answers: [Answers](https://github.com/markikojr/DataScience/blob/master/desafio_passei_direto/Answers.py) 
+### Answers: [Answers](https://github.com/markikojr/DataScience/blob/master/desafio_passei_direto/answers.py) 
 This contains code for data answers.json processing.
 
 ### Sessions: [sessions](https://github.com/markikojr/DataScience/blob/master/desafio_passei_direto/sessions.py) 
